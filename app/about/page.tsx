@@ -44,12 +44,6 @@ export default function About() {
           examination, assessment, and rigorous research.
         </p>
 
-        <p className="text-gray-600 leading-relaxed">
-          A certified & licenced Coach Practitioner in Emotional Intelligence! These certificates are approved by the
-          ICF (International Coach Federation) & IAPCCT (International Association of Professional Coaches,
-          Counselors and Therapists).
-        </p>
-
         <div className="bg-white p-5 rounded-xl shadow-sm">
           <p className="text-gray-800 font-medium">Published Author</p>
           <p className="text-gray-600 text-sm mt-1">
@@ -79,6 +73,11 @@ export default function About() {
         </p>
 
         <div className="bg-white p-6 rounded-2xl shadow-sm space-y-2 text-gray-600">
+          <p>Certified & Licenced Coach Practitioner in Emotional Intelligence</p>
+          <p className="text-sm">
+            Approved by the ICF (International Coach Federation) & IAPCCT (International Association of Professional
+            Coaches, Counselors and Therapists)
+          </p>
           <p>Diploma in Child Psychology</p>
           <p>Bachelor of Education (B.Ed.)</p>
           <p>Master of Science in Computer Science</p>
