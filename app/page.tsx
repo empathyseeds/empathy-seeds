@@ -127,6 +127,42 @@ export default function Home() {
 
   </div>
 
+  <section className="mt-16 space-y-10">
+    <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
+      <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
+        The Seeds We&apos;ve Sworn to Tend
+      </h3>
+
+      <p className="mt-4 text-gray-600 leading-relaxed">
+        To guide parents toward peaceful, joyful, mindful, and empathetic parenting through Emotional
+        Intelligence. We believe in the holistic development of children, which leads them to become future
+        generation leaders and empathetic souls. We are here for parents and children alike, helping them plant
+        the foundational skills of empathy and emotional awareness in young minds.
+      </p>
+    </div>
+
+    <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
+      <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
+        Why Empathy Seeds? The Ancient Spark That Lit Our Path
+      </h3>
+
+      <p className="mt-4 text-gray-600 leading-relaxed">
+        Every child is the leader of his or her own life and can make a significant difference in society through
+        productive small actions. Thinking is an essential part of our everyday lives. A good thinker makes wise
+        choices, takes sound decisions, and makes life successful in their own way.
+      </p>
+
+      <p className="mt-4 text-gray-600 leading-relaxed">
+        Traditional systems or school systems do not focus on building thinking skills. Thinking is not an inborn
+        talent; we need to develop that skill and practice it in our daily lives. Our life is a sequence of
+        actions in the form of decisions; therefore, every action is a choice made or a decision taken. While
+        traditional parenting coexists with traditional educational systems, education has evolved in the new
+        world of technology. Consequently, our parenting must also evolve to meet the needs of the times. This is
+        where Empathy Seeds comes in for new-age parents and children.
+      </p>
+    </div>
+  </section>
+
   {/* FINAL CTA SECTION */}
 <section className="mt-20 px-6 max-w-4xl mx-auto text-center">
 
