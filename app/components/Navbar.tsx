@@ -26,6 +26,7 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/services">Services</Link>
+          <Link href="/stories">Stories</Link>
           <Link href="/articles">Articles</Link>
           <Link href="/contact">Contact</Link>
         </div>
@@ -63,6 +64,9 @@ export default function Navbar() {
                 </Link>
                 <Link href="/services" onClick={closeMenu}>
                   Services
+                </Link>
+                <Link href="/stories" onClick={closeMenu}>
+                  Stories
                 </Link>
                 <Link href="/articles" onClick={closeMenu}>
                   Articles
