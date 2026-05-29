@@ -3,6 +3,27 @@
 export default function Articles() {
   const articles = [
     {
+      title: "The Art of Reparenting: Healing the Hurt Child Within",
+      content: `Healing the “inner child” is rarely the whimsical, easy process popular culture suggests. It is often a journey through profound pain. While we are frequently told to “keep the child inside alive,” that advice can be bittersweet. For those with a joyful childhood, that inner childhood is a sanctuary. But for those whose early years were marked by trauma, anxiety, and loss, keeping that child “active” can mean staying trapped in a cycle of hurt.
+Healing does not mean killing that little child; it means holding her with love and telling her the truth: “She is safe now.”
+From Victim to Protector:
+The first step in healing is acknowledging that you are no longer that helpless child. You must tell her she has grown into a brave woman who has overcome every emotional hurdle placed in her path. She no longer needs to fear the shadows of the past because the “old days” have truly passed. What she was denied in her youth, you now have the power to provide for yourself.
+To heal is to stop comparing the present to a painful past. The people who caused the hurt are often gone, or they no longer hold power over your life. You are no longer dependent on those who failed you; in fact, you may now have others who depend on you. To show up for them-and for yourself- you must see the present clearly.
+Breaking the Cycle:
+We cannot live as two people at once: the child craving love and the adult who must be the giver. Moving on requires us to accept that the past is unchangeable. That history, however painful, has forged you into someone resilient and kind-hearted.
+It is a hard truth that the problems of parents often become the destiny and suffering of their children. If you were raised in a home without peace, respect, or understanding, you weren’t shown a map for a healthy life or a happy marriage. You were given material things but denied emotional security. Yet, in that void, you learned a vital lesson: you learned exactly who you don’t want to be. You now have the agency to become the partner and parent you never had.
+The Lifecycle of Emotions:
+Growth requires a mental transformation that matches our physical one. We must understand that while feelings can last a lifetime, emotions are often tied to specific moments in time. Just as there is a physical death, there is also an “emotional death”.
+Holding onto ancient sadness, anger, or hatred only leads to internal damage. Every emotion is time-bound; when its time has passed, we must allow it to die so that new, healthier emotions can be born. We must release the “imaginary expectations” of childhood- the dreams that were meant for a different age- and embrace the goals that suit who we are today.
+The Path to Peace:
+Healing is not an escape from pain; it is a courageous confrontation with it. It is about:
+Facing the pain rather than running from it.
+Holding yourself with love as you investigate the root cause of your hurt.
+Extracting the wisdom from the experience while letting the agony go.
+
+By reparenting yourself, you transform from a victim of your history into the architect of your future. You become your own “Happy Destination”. You take the learning, release the weight, and finally allow yourself to live- not in the past, but in the peace of the present.`,
+    },
+    {
       title: "The Architecture Of Our Thoughts",
       content: `Empathy Seeds promotes parenting with a spiritual and holistic approach.
 
