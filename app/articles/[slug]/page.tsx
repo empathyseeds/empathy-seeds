@@ -1,39 +1,20 @@
 import { notFound } from "next/navigation";
+import { articles } from "../data";
 
-const articles = [
-  {
-    slug: "architecture-of-our-thoughts",
-    title: "The Architecture Of Our Thoughts",
-    content: "This is full article content for testing"
-  },
-  {
-    slug: "family-root",
-    title: "Family: The Quiet Soil Where We First Take Root",
-    content: "This is full article content for testing"
-  },
-  {
-    slug: "holistic-development",
-    title: "Holistic Development for Children: Own True Shape",
-    content: "This is full article content for testing"
-  },
-  {
-    slug: "parenting-challenges-india",
-    title: "Parenting Challenges in the Indian Context",
-    content: "This is full article content for testing"
-  },
-  {
-    slug: "calm-parent-logic",
-    title: "The \"Calm-Parent\" Logic",
-    content: "This is full article content for testing"
-  }
-];
+type ArticlePageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
 
-export default function ArticlePage({ params }: any) {
-  const slug = params?.slug;
+export function generateStaticParams() {
+  return articles.map((article) => ({
+    slug: article.slug,
+  }));
+}
 
-  // 🔥 DEBUG (remove later)
-  console.log("Current slug:", slug);
-
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  const { slug } = await params;
   const article = articles.find((item) => item.slug === slug);
 
   if (!article) {
