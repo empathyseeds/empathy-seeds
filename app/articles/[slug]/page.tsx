@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles } from "../data";
 
@@ -30,6 +31,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <p className="text-gray-700 whitespace-pre-line leading-relaxed">
         {article.content}
       </p>
+
+      <Link
+        href="/articles"
+        className="inline-block text-sm font-medium text-blue-600 underline underline-offset-2"
+      >
+        Back to Articles
+      </Link>
     </main>
   );
 }

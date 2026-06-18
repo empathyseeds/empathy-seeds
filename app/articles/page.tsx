@@ -17,50 +17,32 @@ export default function Articles() {
           const preview = `${article.content.substring(0, 150)}...`;
 
           return (
-            <details
+            <article
               key={article.slug}
               className="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-blue-200 transition duration-300"
             >
-              <summary className="list-none cursor-pointer touch-manipulation [&::-webkit-details-marker]:hidden">
-                <h2 className="font-semibold text-gray-900 text-lg leading-snug">
-                  {article.title}
-                </h2>
+              <h2 className="font-semibold text-gray-900 text-lg leading-snug">
+                {article.title}
+              </h2>
 
-                <div className="mt-4 text-gray-700 text-sm leading-relaxed group-open:hidden">
-                  {preview.split("\n").map((line, index) => (
-                    <span
-                      key={`${article.slug}-preview-${index}`}
-                      className="block mb-2"
-                    >
-                      {line}
-                    </span>
-                  ))}
-                </div>
+              <div className="mt-4 text-gray-700 text-sm leading-relaxed">
+                {preview.split("\n").map((line, index) => (
+                  <span
+                    key={`${article.slug}-preview-${index}`}
+                    className="block mb-2"
+                  >
+                    {line}
+                  </span>
+                ))}
+              </div>
 
-                <div className="mt-4 text-gray-700 text-sm leading-relaxed hidden group-open:block">
-                  {article.content.split("\n").map((line, index) => (
-                    <span
-                      key={`${article.slug}-full-${index}`}
-                      className="block mb-2"
-                    >
-                      {line}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="mt-4 text-blue-600 text-sm font-medium hover:underline">
-                  <span className="group-open:hidden">Read More</span>
-                  <span className="hidden group-open:inline">Show Less</span>
-                </div>
-
-                <Link
-                  href={`/articles/${article.slug}`}
-                  className="mt-3 inline-block text-sm font-medium text-gray-600 underline underline-offset-2"
-                >
-                  Open Article
-                </Link>
-              </summary>
-            </details>
+              <Link
+                href={`/articles/${article.slug}`}
+                className="mt-3 inline-block text-sm font-medium text-gray-600 underline underline-offset-2"
+              >
+                Open Article
+              </Link>
+            </article>
           );
         })}
       </section>
