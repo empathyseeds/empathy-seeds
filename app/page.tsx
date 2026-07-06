@@ -3,7 +3,7 @@ export default function Home() {
     <main className="pt-16 pb-12 space-y-20">
 
      {/* VIDEO SECTION */}
-<section className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
+<section className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 md:left-auto md:right-auto md:mx-auto md:mt-8 md:w-auto md:max-w-5xl md:translate-x-0 md:px-8">
   <video
     autoPlay
     loop
