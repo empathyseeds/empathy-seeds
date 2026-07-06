@@ -1,7 +1,15 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import { articles } from "./data";
+
+export const metadata: Metadata = {
+  title: "Parenting Articles and Insights",
+  description:
+    "Explore practical articles about conscious parenting, emotional intelligence, child development, resilience, and healthy family relationships.",
+  alternates: {
+    canonical: "/articles",
+  },
+};
 
 export default function Articles() {
   return (

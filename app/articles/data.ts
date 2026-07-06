@@ -1,13 +1,32 @@
 export type Article = {
   slug: string;
   title: string;
+  keywords: string[];
   content: string;
 };
+
+export function getArticleDescription(article: Article) {
+  const firstParagraph = article.content.split("\n\n")[0].replace(/\s+/g, " ");
+
+  if (firstParagraph.length <= 160) {
+    return firstParagraph;
+  }
+
+  const shortened = firstParagraph.slice(0, 157);
+  return `${shortened.slice(0, shortened.lastIndexOf(" "))}...`;
+}
 
 export const articles: Article[] = [
   {
     slug: "art-of-reparenting",
     title: "The Art of Reparenting: Healing the Hurt Child Within",
+    keywords: [
+      "inner child healing",
+      "reparenting yourself",
+      "childhood trauma healing",
+      "emotional healing",
+      "conscious parenting",
+    ],
     content: `Healing the "inner child" is rarely the whimsical, easy process popular culture suggests. It is often a journey through profound pain. While we are frequently told to "keep the child inside alive," that advice can be bittersweet. For those with a joyful childhood, that inner childhood is a sanctuary. But for those whose early years were marked by trauma, anxiety, and loss, keeping that child "active" can mean staying trapped in a cycle of hurt.
 
 Healing does not mean killing that little child; it means holding her with love and telling her the truth: "She is safe now."
@@ -38,6 +57,13 @@ By reparenting yourself, you transform from a victim of your history into the ar
   {
     slug: "architecture-of-our-thoughts",
     title: "The Architecture Of Our Thoughts",
+    keywords: [
+      "child critical thinking",
+      "thinking skills for children",
+      "realistic thinking",
+      "parenting skills",
+      "emotional intelligence",
+    ],
     content: `Empathy Seeds promotes parenting with a spiritual and holistic approach.
 
 Stop saying "Think Positive"; Practice "Thinking Real."
@@ -63,6 +89,13 @@ Raising another human is a very precious, valuable, and responsible undertaking.
   {
     slug: "family-root",
     title: "Family: The Quiet Soil Where We First Take Root",
+    keywords: [
+      "family and child development",
+      "conscious parenting",
+      "parenting role",
+      "childhood learning",
+      "parent child relationship",
+    ],
     content: `A child's first educational institution is their family. The family is where a child learns the most important life lessons. Children go through various experiences, such as dealing with different emotions, learning habits, behavioral changes, mannerisms, ethics, rituals, routines, and beliefs. They also learn about cultural aspects, building relations, understanding different aspects of human behavior, daily living challenges, language, and much more. Learning about life is made easier by observing and imitating family members.
 
 Therefore, parenting plays the most significant role in a child's life. Parenting is a skill that requires patience and practice. It is an acquired skill that can be learned over time; it is a continuous process that should be improved by learning as you go.
@@ -72,6 +105,13 @@ Consciousness is a crucial component of parenting; hence the term "Conscious Par
   {
     slug: "holistic-development",
     title: "Holistic Development for Children: Own True Shape",
+    keywords: [
+      "holistic child development",
+      "child wellness",
+      "healthy routines for children",
+      "stress management for children",
+      "child nutrition",
+    ],
     content: `In today's fast-paced world of technology, it is easy to lose sight of our children's well-being. Children are often struggling with homework, assignments, school activities, extra-curricular activities, tuitions, sports, family engagements, and other commitments. In addition to this, school examinations and competitive tests keep children stressed and tired.
 
 Children often forget to take care of themselves. But what if there were a way to feel more energized, focused, and healthier without adding extra stress to the mix?
@@ -94,6 +134,13 @@ How can we achieve this?
   {
     slug: "parenting-challenges-india",
     title: "Parenting Challenges in the Indian Context",
+    keywords: [
+      "parenting challenges in India",
+      "Indian parenting",
+      "digital addiction in children",
+      "academic pressure",
+      "emotional intelligence for parents",
+    ],
     content: `- Sustaining traditional values: Balancing respect for elders with achieving academic excellence.
 - Dealing with modern realities: Managing digital addiction and other contemporary issues.
 - Nuclear family isolation: Addressing the lack of a traditional support system.
@@ -108,6 +155,13 @@ How can we achieve this?
   {
     slug: "calm-parent-logic",
     title: 'The "Calm-Parent" Logic',
+    keywords: [
+      "calm parenting",
+      "emotional intelligence parenting",
+      "stress-free parenting",
+      "child brain and stress",
+      "positive parenting India",
+    ],
     content: `In India, "IQ" has been the priority for 50 years. However, parents are beginning to realize that a child with a 99% score but zero stress-management skills will struggle in the real world.
 
 A child's brain cannot learn when it is in a state of fear or stress. Teaching parents Emotional Intelligence will help children learn and succeed in a healthy way. Parenting is a skill; everyone who becomes a parent, or wants to become a parent, needs to acquire this skill. Like any other skill development program, we should learn and develop our parenting skills to ensure stress-free parenting.
@@ -117,6 +171,13 @@ According to "Calm-Parent" logic, a child's brain cannot learn effectively when 
   {
     slug: "parental-pressure",
     title: "The Greenhouse Trap: Nurturing Individuality Against the Weight of Parental Expectations",
+    keywords: [
+      "parental expectations",
+      "academic pressure on children",
+      "child individuality",
+      "toxic parenting pressure",
+      "child mental health",
+    ],
     content: `While raising children, parents often inadvertently begin to impose the heavy burden of their own expectations upon them. As children grow older, these demands multiply in a relentless sequence. Tragically, a child's true potential and capacity for success become strictly confined within the boundaries of these external desires, transforming the fulfillment of parental dreams into the ultimate, exhausting goal of the child's life.
 
 Consequently, children begin to limit their own innate capabilities simply to match what is expected of them. Because parental expectations are frequently shaped by the parents' own lived limitations and unfulfilled ambitions, they are rarely complementary to a child's genuine potential. This misalignment remains permanently incomplete. Along this journey, the child's future world and authentic self are quietly crushed.
@@ -136,6 +197,13 @@ To break this cycle, parenting must shift from a mindset of molding to one of un
   {
     slug: "emotional-suppression",
     title: "Moving Beyond Emotional Suppression: The Power of Co-Regulation in Parenting",
+    keywords: [
+      "emotional suppression in children",
+      "co-regulation parenting",
+      "emotional validation",
+      "child emotional regulation",
+      "emotional resilience",
+    ],
     content: `In modern parenting, we often unintentionally teach our children emotional suppression. When a child is upset, we frequently use well-meaning phrases like:
 "You are strong."
 "Don't think about it."
@@ -191,6 +259,13 @@ Validation allows them to unfold into self-aware, emotionally resilient adults w
   {
     slug: "children-security-and-parents-insecurity",
     title: "Children's Security and Parents' Insecurity",
+    keywords: [
+      "child safety and parenting",
+      "parental insecurity",
+      "overprotective parenting",
+      "child independence",
+      "emotional security for children",
+    ],
     content: `We give birth to children and raise them to become a part of our future, our society, and our families. Because children are born from our own bodies, a powerful instinct takes root the moment they are born: the feeling that "this child is mine." This feeling gives rise to an unwritten, lifelong responsibility-the responsibility of keeping the child safe.
 
 This protective instinct is shared by animals as well. However, animals raise their young by focusing strictly on the essential security required for basic survival. In humans, parenting is rarely that straightforward. Because humans are thinking, social creatures, parents naturally blend their personal thoughts, social expectations, and anxieties into how they raise their children.
@@ -218,6 +293,13 @@ True protection does not mean building a fortress around our children to keep th
   {
     slug: "mirrors-and-anchors",
     title: "Mirrors and Anchors: Nurturing a Child's Mind Without Leaving Your Imprint",
+    keywords: [
+      "conscious parenting",
+      "parental self-reflection",
+      "child individuality",
+      "parenting habits",
+      "emotional intelligence for parents",
+    ],
     content: `Is it possible to practice parenting without letting the imprint of the parent's personality fall upon the child's personality?
 
 When a child is born, they come with their own distinct capacity to think. They are not blank slates to be written upon nor are they clay to be aggressively molded. A child naturally interacts with their environment by processing their own unique needs, discovering what they love, and studying the world around them to form their own authentic reactions.
@@ -251,6 +333,13 @@ Breaking the cycle of automatic habit imposition requires courage and a willingn
   {
     slug: "beyond-the-complaint",
     title: "Beyond the Complaint: Four Questions to Transform Playground Problems into Parenting Opportunities",
+    keywords: [
+      "child complaining",
+      "playground conflict",
+      "conflict resolution for children",
+      "emotional intelligence for children",
+      "parenting complaints",
+    ],
     content: `We often observe that children go to the parent to make a complaint about another child or some activity they are engaging in. A child approaches a parent to express discomfort or frustration, indicating they haven't yet learned to manage big emotions. But as a Parenting Coach and Emotional Intelligence (EI) Practitioner, may I ask:
 
 Have you learned about how to handle big emotions?
