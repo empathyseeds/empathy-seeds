@@ -94,17 +94,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {article.title}
       </h1>
 
-      <ul aria-label="Article topics" className="flex flex-wrap gap-2">
-        {article.keywords.map((keyword) => (
-          <li
-            key={keyword}
-            className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700"
-          >
-            {keyword}
-          </li>
-        ))}
-      </ul>
-
       <p className="text-gray-700 whitespace-pre-line leading-relaxed">
         {article.content}
       </p>
