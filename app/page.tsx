@@ -37,26 +37,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 max-w-4xl mx-auto text-center">
-        <div className="bg-blue-50 rounded-2xl py-10 px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
-            Take the First Step Towards Understanding &amp; Growth
-          </h2>
-
-          <p className="mt-4 text-gray-600">
-            Share your concerns in a safe and confidential space. We are here to listen, understand, and support you.
-          </p>
-
-          <div className="mt-6">
-            <a
-              href="/get-help"
-              className="bg-blue-500 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-600 transition"
-            >
-              Share Your Concern
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
