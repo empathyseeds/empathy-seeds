@@ -104,6 +104,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       >
         Back to Articles
       </Link>
+
+      <Link
+        href="/"
+        className="inline-flex rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+      >
+        Back to Home
+      </Link>
     </main>
   );
 }

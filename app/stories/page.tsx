@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 type Story = {
   title: string;
   content: string;
@@ -137,6 +139,15 @@ Usually, this cycle is only broken through:
           })}
         </section>
       )}
+
+      <div className="text-center">
+        <Link
+          href="/"
+          className="inline-flex rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+        >
+          Back to Home
+        </Link>
+      </div>
     </main>
   );
 }

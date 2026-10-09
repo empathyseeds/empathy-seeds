@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <main className="pt-24 pb-12 px-6 max-w-5xl mx-auto space-y-16">
@@ -122,6 +124,15 @@ export default function About() {
           generation with empathy and insight.&quot; - Snehal
         </div>
       </section>
+
+      <div className="text-center">
+        <Link
+          href="/"
+          className="inline-flex rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+        >
+          Back to Home
+        </Link>
+      </div>
     </main>
   );
 }
