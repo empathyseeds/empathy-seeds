@@ -23,10 +23,8 @@ export default function Navbar() {
         <div className="hidden md:flex gap-6 text-gray-700 font-medium">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
           <Link href="/stories">Stories</Link>
           <Link href="/articles">Articles</Link>
-          <Link href="/contact">Contact</Link>
         </div>
 
         <details ref={menuRef} className="relative md:hidden group">
@@ -60,17 +58,11 @@ export default function Navbar() {
                 <Link href="/about" onClick={closeMenu}>
                   About
                 </Link>
-                <Link href="/services" onClick={closeMenu}>
-                  Services
-                </Link>
                 <Link href="/stories" onClick={closeMenu}>
                   Stories
                 </Link>
                 <Link href="/articles" onClick={closeMenu}>
                   Articles
-                </Link>
-                <Link href="/contact" onClick={closeMenu}>
-                  Contact
                 </Link>
               </nav>
             </div>
