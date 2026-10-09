@@ -19,15 +19,16 @@ export default function About() {
           </h1>
 
           <p className="mt-2 text-blue-600 font-medium">
-            Educational Counselor | Emotional Well-being Coach | Parenting Expert
+            Educator | Educational Counselor | Child Development &amp; Emotional Literacy Specialist
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
-            Mrs. Snehal Patil More is a distinguished Educational Counselor and Career Guide dedicated to fostering
-            academic and emotional growth. As an Emotional Well-being Coach and Parenting Expert, she specializes in
-            supporting both parents and children within the formative 1-to-15 age group. As a mother of two sons, she
-            brings a unique blend of professional expertise and firsthand parental insight to her practice, allowing
-            her to connect deeply with the families she guides.
+            Snehal Patil More is a dedicated educator, academic leader, and educational counselor committed to
+            nurturing both cognitive growth and emotional well-being in students. Specializing in early childhood
+            through adolescent education (ages 1 to 15), she bridges rigorous academic standards with compassionate,
+            student-centered pedagogy. As a mother of two sons, Snehal combines her extensive professional expertise
+            with real-world parental insight to build supportive, empathetic learning communities for children,
+            parents, and fellow educators.
           </p>
         </div>
       </section>
