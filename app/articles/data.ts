@@ -64,7 +64,7 @@ By reparenting yourself, you transform from a victim of your history into the ar
       "parenting skills",
       "emotional intelligence",
     ],
-    content: `Reflections by Snehal promotes parenting with a spiritual and holistic approach.
+    content: `Everything about Parenting, Relationship and Family promotes parenting with a spiritual and holistic approach.
 
 Stop saying "Think Positive"; Practice "Thinking Real."
 
@@ -78,7 +78,7 @@ Parenting is a skill, and everyone who becomes a parent, or wants to become one,
 
 Every individual is unique, and because every child has different emotional needs and every parent has unique life experiences, every parent-child relationship requires personalized guidance.
 
-Reflections by Snehal provides a structure where parenting grows through uniqueness and unity. Our goal is to help you protect your individual identity while developing your parenting skills, which we achieve by nurturing your emotional intelligence.
+Everything about Parenting, Relationship and Family provides a structure where parenting grows through uniqueness and unity. Our goal is to help you protect your individual identity while developing your parenting skills, which we achieve by nurturing your emotional intelligence.
 
 From the decision to become a parent to developing that tiny human into a socially accepted and successful individual, the journey is a series of multiple tasks, choices, and milestones.
 

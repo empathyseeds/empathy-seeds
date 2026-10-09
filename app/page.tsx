@@ -143,7 +143,7 @@ export default function Home() {
 
     <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
       <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
-        Why Reflections by Snehal? The Ancient Spark That Lit Our Path
+        Why Everything about Parenting, Relationship and Family? The Ancient Spark That Lit Our Path
       </h3>
 
       <p className="mt-4 text-gray-600 leading-relaxed">
@@ -158,7 +158,7 @@ export default function Home() {
         actions in the form of decisions; therefore, every action is a choice made or a decision taken. While
         traditional parenting coexists with traditional educational systems, education has evolved in the new
         world of technology. Consequently, our parenting must also evolve to meet the needs of the times. This is
-        where Reflections by Snehal comes in for new-age parents and children.
+        where Everything about Parenting, Relationship and Family comes in for new-age parents and children.
       </p>
     </div>
   </section>
