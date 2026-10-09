@@ -18,6 +18,55 @@ export function getArticleDescription(article: Article) {
 
 export const articles: Article[] = [
   {
+    slug: "architecture-of-mystery",
+    title: "The Architecture of Mystery: Why Keeping Curiosity Alive is the Key to Modern Marriage",
+    keywords: [
+      "curiosity in marriage",
+      "modern relationships",
+      "healthy relationship boundaries",
+      "personal growth in marriage",
+      "emotional intimacy",
+    ],
+    content: `Today, many people believe that a great marriage means sharing every single thought, feeling, and detail of daily life right away. Social media and instant messaging push us to show everything. But when there is no privacy left, relationship problems often start.
+
+Looking at human psychology, one big reason marriages break today is that couples lose the feeling of curiosity about each other.
+
+How Modern Life Kills the "Slow Burn"
+
+In the past, couples got to know each other slowly over many years. Whether through arranged marriages or long-distance letters, people learned about their partner’s strengths, humor, and character through real-life events and challenges. This natural pace kept a sense of wonder alive.
+
+Today, we share too much, too fast. Through social media and non-stop texting, we feel like we know everything about a person before we even face life's big moments together. When everything is predictable, curiosity dies—and when curiosity dies, excitement and romantic interest go away with it.
+
+Why Love Needs Personal Space
+
+Psychologists explain that while feeling safe needs closeness, romantic passion actually needs a little bit of distance and space.
+
+When two people merge so completely that they lose their separate identities, they stop seeing each other as interesting individuals. To keep love alive, each partner needs self-differentiation—the ability to stay their own person while being part of a couple.
+
+When you keep learning new skills, working on personal goals, and managing challenges on your own, your partner occasionally sees a new, impressive side of you. Discovering a new strength in your partner builds deep respect and reminds you that they are not a fully solved puzzle.
+
+Being Open vs. Showing Off Everything
+
+Keeping a bit of mystery does not mean keeping bad secrets, lying, or hiding important feelings. True trust and emotional safety are always essential.
+
+Instead, it means not dumping every minor worry, raw opinion, or random thought onto your partner. Most social media sharing is just surface-level noise. It gives the false impression that you know a person completely, without building real emotional depth.
+
+Healthy adults grow and change throughout life. When both partners continue to grow individually, they always have something fresh and new to bring back to the relationship.
+
+How to Keep Curiosity Alive Today
+
+To protect your marriage from modern burnout and boredom, you can practice a few simple habits:
+
+Let things reveal naturally: Do not feel forced to tell your whole life story and all your habits right at the start. Let your actions and abilities show up naturally over time.
+
+Keep your own interests: Pursue hobbies, learning, and goals that belong to you. A strong partner is an independent person, not a book with no secret pages.
+
+Remember that your partner is changing: Never assume you know 100% of what your partner thinks or feels. People change over time, so keep asking good questions and paying attention.
+
+Curiosity is a natural human need. When a marriage loses curiosity because of non-stop over-sharing, it loses the main glue that holds two people together.
+
+A happy, long-lasting marriage is not about being completely predictable to each other. It is an ongoing journey where two independent people continuously discover new and surprising things about each other over a lifetime.`,
+  },  {
     slug: "art-of-reparenting",
     title: "The Art of Reparenting: Healing the Hurt Child Within",
     keywords: [
