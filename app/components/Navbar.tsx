@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.png" alt="logo" width={40} height={40} />
           <span className="font-semibold text-base text-gray-800">
-            Empathy Seeds
+            Reflections by Snehal
           </span>
         </Link>
 
