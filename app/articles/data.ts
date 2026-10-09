@@ -66,7 +66,8 @@ Remember that your partner is changing: Never assume you know 100% of what your 
 Curiosity is a natural human need. When a marriage loses curiosity because of non-stop over-sharing, it loses the main glue that holds two people together.
 
 A happy, long-lasting marriage is not about being completely predictable to each other. It is an ongoing journey where two independent people continuously discover new and surprising things about each other over a lifetime.`,
-  },  {
+  },
+  {
     slug: "art-of-reparenting",
     title: "The Art of Reparenting: Healing the Hurt Child Within",
     keywords: [
