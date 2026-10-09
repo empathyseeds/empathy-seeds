@@ -8,7 +8,7 @@ export default function About() {
         {/* IMAGE */}
         <div className="flex justify-center">
           <img
-            src="/profile.jpg"
+            src="/profile.jpeg"
             alt="Snehal Patil More"
             className="w-[70%] max-w-sm h-auto rounded-2xl shadow-md"
           />
