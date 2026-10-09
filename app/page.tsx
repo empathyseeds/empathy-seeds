@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="pt-16 pb-12 space-y-20">
+    <main className="pt-16 pb-12 space-y-12">
       <section className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 md:left-auto md:right-auto md:mx-auto md:mt-8 md:w-auto md:max-w-5xl md:translate-x-0 md:px-8">
         <video
           autoPlay
@@ -13,6 +15,27 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
       </section>
+
+      <nav aria-label="Explore the site" className="flex flex-wrap justify-center gap-4 px-6">
+        <Link
+          href="/about"
+          className="rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+        >
+          About
+        </Link>
+        <Link
+          href="/articles"
+          className="rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+        >
+          Articles
+        </Link>
+        <Link
+          href="/stories"
+          className="rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+        >
+          Stories
+        </Link>
+      </nav>
 
       <section className="px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm">
