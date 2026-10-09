@@ -98,19 +98,21 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {article.content}
       </p>
 
-      <Link
-        href="/articles"
-        className="inline-block text-sm font-medium text-blue-600 underline underline-offset-2"
-      >
-        Back to Articles
-      </Link>
+      <div className="flex flex-wrap items-center gap-4 pt-4">
+        <Link
+          href="/articles"
+          className="inline-block text-sm font-medium text-blue-600 underline underline-offset-2"
+        >
+          Back to Articles
+        </Link>
 
-      <Link
-        href="/"
-        className="inline-flex rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
-      >
-        Back to Home
-      </Link>
+        <Link
+          href="/"
+          className="inline-flex rounded-xl bg-blue-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-blue-600"
+        >
+          Back to Home
+        </Link>
+      </div>
     </main>
   );
 }
