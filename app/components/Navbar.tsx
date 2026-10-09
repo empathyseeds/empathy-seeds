@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -16,7 +15,6 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-[80]">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="logo" width={40} height={40} />
           <span className="font-semibold text-base text-gray-800">
             Reflections by Snehal
           </span>
