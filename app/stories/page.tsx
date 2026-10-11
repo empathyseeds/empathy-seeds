@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import LikeButton from "../components/LikeButton";
 
 type Story = {
+  slug: string;
   title: string;
   content: string;
 };
@@ -11,6 +13,7 @@ export default function Stories() {
   // Add your stories here (same format as Articles).
   const stories: Story[] = [
     {
+      slug: "the-ocean-within",
       title: "The Ocean Within",
       content: `Sometimes, I still see that little girl inside me who looked at everything with curiosity, always lost in her own thoughts. Even though she was born into a well-to-do family, she was always searching for something. Despite being surrounded by people, she always felt a profound sense of loneliness.
 
@@ -31,6 +34,7 @@ Then one day, I sat down and reviewed my entire life, starting from childhood. I
 The little girl who was once lost, searching for an "ocean of emotions" in others, finally found that ocean within herself. I started loving myself, attending to my own needs, and giving myself the priority I once expected from others. My loneliness didn't vanish because the world changed; it vanished because I changed the way I looked at myself. Now, I am not just a mother or a wife hungry for love; I am a woman who is a source of love for herself and everyone around her.`,
     },
     {
+      slug: "the-awakening-of-compassion",
       title: "The Awakening of Compassion",
       content: `Arin, my six-year-old son, has always been a meat lover; he simply craves the taste. Recently, he joined me on a trip to the local butcher shop for the first time. He was buzzing with excitement, thrilled not only by the prospect of buying meat but by the grown-up responsibility of being allowed to accompany me.
 
@@ -49,6 +53,7 @@ I took a breath and said, "Arin, it makes me so happy to see how thoughtful and 
 Children naturally absorb behaviors and habits from the world around them. Depending on the environment we provide, they learn how to think and act. This experience reminded me that providing a nurturing, thought-provoking environment from early childhood is essential for raising a truly conscious human being.`,
     },
     {
+      slug: "over-pampering-is-the-velvet-glove-on-the-iron-hand-of-control",
       title:
         'Over-Pampering Is the "Velvet Glove" on the Iron Hand of Control',
       content: `There was once a boy who was over-pampered by his parents, and he loved it to his core. However, as he grew up, he began to perceive that same "affection" as control. The pampering had morphed into heavy expectations. He realized too late that over-pampering is, in itself, a form of control.
@@ -134,6 +139,7 @@ Usually, this cycle is only broken through:
                     <span className="hidden group-open:inline">Show Less</span>
                   </div>
                 </summary>
+                <LikeButton itemId={`story:${story.slug}`} />
               </details>
             );
           })}
