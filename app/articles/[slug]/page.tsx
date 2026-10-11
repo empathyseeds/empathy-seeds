@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SITE_NAME, SITE_URL } from "../../lib/site";
 import { articles, getArticleDescription } from "../data";
+import LikeButton from "../../components/LikeButton";
 
 type ArticlePageProps = {
   params: Promise<{
@@ -97,6 +98,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <p className="text-gray-700 whitespace-pre-line leading-relaxed">
         {article.content}
       </p>
+
+      <LikeButton itemId={`article:${article.slug}`} />
 
       <div className="flex flex-wrap items-center gap-4 pt-4">
         <Link
