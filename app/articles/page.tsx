@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { articles } from "./data";
+import LikeButton from "../components/LikeButton";
 
 export const metadata: Metadata = {
   title: "Parenting Articles and Insights",
@@ -50,6 +51,8 @@ export default function Articles() {
               >
                 Open Article
               </Link>
+
+              <LikeButton itemId={`article:${article.slug}`} />
             </article>
           );
         })}
